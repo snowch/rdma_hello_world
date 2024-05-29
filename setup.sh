@@ -74,6 +74,9 @@ sudo ip link set dev $interface up
 sudo ip link add rxe0 type dummy 
 sudo ip link set dev rxe0 up
 
+sudo rdma link add rxe0_rdma type rxe netdev rxe0
+sudo rdma link add rxe0 type rxe netdev enp0s1
+
 echo "Verifying Soft-RDMA setup..."
 ibv_devices
 
