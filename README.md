@@ -2,10 +2,13 @@
 
 This repository contains an example of setting up an RDMA environment, building and running an RDMA server and client, and sending a message between them. The Dockerfile and setup script automate the process, making it easier to reproduce the environment on different machines.
 
-##### Requirements
+WARNING: This project is currently broken, see [Queue Pair is NULL](https://github.com/snowch/rdma_hello_world/issues/2)
 
-- Docker
-- Infiniband-diags package (for the ibtool command)
+##### Environment
+
+- Mac OS M3 Apple Silicon with UTM
+- Ubuntu 24.04 Linux VM running natively in UTM
+- Soft-RoCE
 
 #### Setup
 
